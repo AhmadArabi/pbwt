@@ -1,0 +1,129 @@
+.htmlMain {
+  Background: #ededed;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+  font-family: 'Baloo 2', sans-serif;
+}
+
+.bodyMain {
+  background: unset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  min-height: 100vh;
+  position: relative;
+  letter-spacing: 1px;
+  font-size: 16px;
+  line-height: 25px;
+  word-break: break-word;
+  color: #232323;
+  font-family: 'Archivo';
+}
+
+.midMain {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 25px;
+}
+
+.midMainSec {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.containerMain {
+  max-width: 1400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: end;
+  padding: 0 10px 0 10px;
+  position: relative;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+a {
+  transition: ease 0.3s;
+}
+
+a:hover {
+  transition: ease 0.3s;
+}
+
+.btnMain {
+  transition: ease 0.3s;
+  padding: 8px 21px;
+  border: unset;
+  outline: unset;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  background: linear-gradient(to top right, rgba(255,77,66), rgba(255,161,77));
+  color: white;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 10px;
+}
+
+.btnMain:hover {
+  transition: ease 0.3s;
+}
+
+.btnMain > * {
+  position: relative;
+  z-index: 2;
+}
+
+.btnMain::before {
+  transition: ease 0.3s;
+  content: "";
+  background: linear-gradient(to top right, rgba(255,255,255,0.1), rgba(255,255,255,0.1)), linear-gradient(to top right, rgba(255,77,66), rgba(255,161,77));
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.btnMain:hover::before {
+  transition: ease 0.3s;
+  background: linear-gradient(to top right, rgba(255,255,255,0.1), rgba(255,255,255,0.1)), linear-gradient(to top right, rgba(255,77,66), rgba(255,161,77));
+  opacity: 1;
+}
+
+.midMainSecInside {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 25px;
+}
+
+.linkMain {
+  transition: ease 0.3s;
+  color: rgba(255,255,255,0.75);
+}
+
+.linkMain:hover {
+  transition: ease 0.3s;
+  color: rgba(0,0,0,0.75);
+}
+

@@ -1,0 +1,184 @@
+.dashboardMain {
+  width: 100%;
+  display: flex;
+  grid-gap: 25px;
+}
+
+.dashboardMainSide {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 15px;
+}
+
+.dashboardMainBody {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+}
+
+.dashboardMainSideSec {
+  width: 100%;
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 0 4px 0 rgb(0,0,0, 0.1);
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+}
+
+.dashboardMainSideSec.dashboardMainSideSecAlt {
+  background: rgba(255,255,255,0);
+  border-radius: 15px;
+  box-shadow: 0 0 4px 0 rgba(0,0,0,0);
+  padding: 0 15px;
+}
+
+.dashboardMainSideSec.dashboardMainSideSecProfile {
+}
+
+.dashboardMainSideSec.dashboardMainSideSecNav {
+}
+
+.btnMain.btnMainAlt.dashboardMainSideSecNavBtn {
+  width: 100%;
+  justify-content: start;
+}
+
+.dashboardMainBodySec {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 15px;
+}
+
+.dashboardMainBodySec.dashboardMainBodySecWallet {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 0 4px 0 rgb(0,0,0,0.1);
+}
+
+.dashboardMainBodySec.dashboardMainBodySecTitle {
+}
+
+.dashboardMainBodySecTitleHeading {
+  color: rgba(0,0,0,0.5);
+  font-size: 24px;
+}
+
+.dashboardMainSideSecProfileBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.dashboardMainSideSecProfileBoxPic {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 4px 0 rgb(0,0,0,0.1);
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+.dashboardMainSideSecProfileBoxPicImg {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.dashboardMainSideSecProfileBoxPicWrapper {
+  border-radius: 100px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top right, #FF4D42, #FFA14D);
+  padding: 5px;
+  height: 100px;
+  width: 100px;
+  box-shadow: 0 0 4px 0 rgba(0,0,0,0.1);
+  margin-top: -55px;
+}
+
+.dashboardMainSideSecProfileDetails {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 5px;
+  border-radius: 10px;
+}
+
+.dashboardMainSideSec.dashboardMainSideSecAccount {
+}
+
+.dashboardMainSideSecAccountDetails {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+}
+
+.dashboardMainSideSecAccountDetailsLimits {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 5px;
+}
+
+.dashboardMainSideSecAccountDetailsLimitsText {
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.dashboardMainSideSecAccountDetailsLimitsText.dashboardMainSideSecAccountDetailsLimitsTextAlt {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.dashboardMainSideSecAccountDetailsLimitsBar {
+  border-radius: 7px;
+  height: 20px;
+  background: rgba(255,155,76,0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+.dashboardMainSideSecAccountDetailsLimitsBarInside {
+  width: 0%;
+  height: 100%;
+  border-radius: 7px;
+  box-shadow: 0 0 4px 0 rgb(0,0,0,0.1);
+  background: linear-gradient(to top right, #FF4D42, #FFA14D);
+}
+
+.dashboardMainSideSecProfileBanner {
+  width: 100%;
+  border-radius: 10px;
+  padding-top: 30%;
+  background: rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.dashboardMainSideSecProfileBannerImg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  object-fit: cover;
+}
+

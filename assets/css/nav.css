@@ -1,0 +1,140 @@
+.topMain {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  grid-gap: 35px;
+}
+
+.topMainNav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.topMainNavInside {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  grid-gap: 35px;
+}
+
+.topMainNavInsideSec {
+  width: 100%;
+}
+
+.topMainNavInsideSec.topMainNavInsideSecSides {
+  max-width: 250px;
+}
+
+.topMainNavInsideSec.topMainNavInsideSecMid {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 10px;
+  position: relative;
+}
+
+.linkMain.topMainNavInsideSecMidLink {
+  text-align: center;
+  flex-grow: 1;
+  text-decoration: unset;
+  color: rgba(0,0,0,0.5);
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.linkMain.topMainNavInsideSecMidLink > * {
+  position: relative;
+  z-index: 2;
+}
+
+.linkMain.topMainNavInsideSecMidLink:hover {
+  color: white;
+}
+
+.linkMain.topMainNavInsideSecMidLink::before {
+  transition: ease 0.3s;
+  content: "";
+  background: linear-gradient(to top right, #FF4D42, #FFA14D);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: 0;
+}
+
+.linkMain.topMainNavInsideSecMidLink:hover::before {
+  transition: ease 0.3s;
+  opacity: 1;
+}
+
+.linkMain.topMainNavInsideSecMidLink.topMainNavInsideSecMidLinkSmall {
+  max-width: 50px;
+}
+
+.linkMain.topMainNavInsideSecMidLink.topMainNavInsideSecMidLinkActive {
+  background: linear-gradient(to top right, #FF4D42, #FFA14D);
+  color: white;
+}
+
+.topMainNavInsideSecSidesLogo {
+  width: 100%;
+}
+
+.topMainNavInsideSecMidLinks {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  grid-gap: 25px;
+  border-radius: 15px;
+  padding: 10px;
+  background: rgb(255,255,255);
+  border: solid 1px rgba(255,255,255,0.05);
+  box-shadow: 0 0 4px 0 rgb(0,0,0,0.1);
+  flex-wrap: wrap;
+}
+
+.topMainNavInsideSecMidMenu {
+  width: 100%;
+  display: none;
+  flex-direction: row;
+  grid-gap: 25px;
+  border-radius: 15px;
+  padding: 10px;
+  background: rgb(255,255,255);
+  border: solid 1px rgba(255,255,255,0.05);
+  box-shadow: 0 0 4px 0 rgb(0,0,0,0.1);
+  flex-wrap: wrap;
+  justify-content: center;
+  position: absolute;
+  top: 100%;
+  z-index: 5;
+}
+
+.topMainNavInsideSecMidMenu.topMainNavInsideSecMidMenuActive {
+  display: flex;
+}
+
+.btnMain.btnMainAlt {
+  background: unset;
+  color: rgba(0,0,0,0.5);
+}
+
+.btnMain.btnMainAlt:hover {
+  color: rgb(255,255,255);
+}
+
+.btnMain.btnMainAlt.btnMainAltActive {
+  background: linear-gradient(to top right, #FF4D42, #FFA14D);
+  color: white;
+}
+
